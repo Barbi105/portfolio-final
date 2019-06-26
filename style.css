@@ -1,0 +1,192 @@
+/* general */
+body{
+    background-color: #000;
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+.jumbotron{
+    background-color: rgb(245, 246, 247);
+    border-radius: 0%;
+    text-align: center;
+    margin: 0rem 1rem 0rem 1rem
+}
+.subtitle{
+    /* border-bottom: 5px solid #E8489A; */
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    /* font-family: 'Fjalla One', sans-serif; */
+    text-shadow: -0.06em -0.04em rgb(255, 179, 179),  0.06em 0.04em rgb(179, 235, 250); 
+  }
+@media only screen and (max-width: 320px){
+.subtitle{
+    margin-bottom: 50px;
+}
+}
+
+/* navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(245, 246, 247);
+    border-top: 15px solid black; 
+    border-left: 1rem solid black;
+    border-right: 1rem solid black;
+    top:0;
+    width: 100%;
+}
+.navSearchItems{
+    margin-right: 1rem ;
+    font-weight: bold;
+}
+.navSearchItems a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.0rem;
+    margin: 0 10px;
+}
+.navSearchItems a:hover {
+    color: #F26BAC;
+}
+nav h1 {
+    font-size: 4rem;
+    padding: 10px 0;
+    padding-left: 20px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    font-family: 'Anton', sans-serif;
+    text-shadow: -0.06em -0.04em rgb(255, 179, 179),  0.06em 0.04em rgb(179, 235, 250); 
+    transition: transform .2s;
+}
+nav h1:hover{
+    transform: scale(1.05);
+}
+@media only screen and (max-width: 600px){
+    nav{
+      display: inherit;
+      text-align: center;
+    }
+}
+@media only screen and (max-width: 350px){
+    nav h1{
+      font-size: 3rem;
+    }
+    .navSearchItems a {
+        margin: 0 5px 5px 5px;;
+    }
+    .navSearchItems{
+        margin-right: 0;
+    }
+}
+
+/* about me/landing page */
+
+#pic{
+    margin-top: 8rem;
+    width: 350px;
+    height: 350px;
+    transition: transform .2s;  
+}
+#pic:hover{
+    transform: scale(1.1);
+  }
+#passion{
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+@media only screen and (max-width: 420px){
+    #pic{
+        margin-top: 11rem;
+        width: 250px;
+        height: 250px;
+    }
+    #passion{
+        font-size: 2rem;
+    }
+}
+
+/* portfolio */
+#portfolioPage{
+    align-content: center;
+    text-align: center;
+}
+.card-title{
+    font-family: 'Lobster', cursive;
+    transition: transform .2s;
+}
+.card-title:hover{
+    transform: scale(1.1);
+    direction: none;
+}
+.a-card{
+    color: black;
+}
+.a-card:hover{
+    text-decoration:none !important;
+    color: #F26BAC;
+}
+p.card-text{
+    color: #404040;
+    text-align: left;
+}
+
+/* services */
+#servicesPage{
+    text-align: inherit;
+}
+#serviceBio{
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+    font-family: 'Lato', sans-serif;
+    color: #404040;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.branding{
+    width: 350px;
+    height: 350px;  
+}
+.col-branding{
+    padding-left: 0;
+}
+@media only screen and (max-width: 768px){
+    .branding{
+        width: 250px;
+        height: 250px;  
+    }
+}
+@media only screen and (max-width: 420px){
+    #serviceBio{
+        margin-bottom: 5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .branding{
+        width: 300px;
+        height: 300px;  
+    }
+}
+@media only screen and (max-width: 360px){
+    .branding{
+        width: 290px;
+        height: 290px;  
+    }
+}
+@media only screen and (max-width: 320px){
+    .branding{
+        width: 250px;
+        height: 250px;  
+    }
+    #serviceBio{
+        font-size: 17px;
+    }
+}
